@@ -1,0 +1,107 @@
+* {
+box-sizing : border-box;
+}
+
+
+h1, p {
+font-family: 'Acme', sans-serif;
+color: #fff;
+}
+
+.section {
+    text-align: center;
+    position:relative;
+}
+
+.overlay {
+    
+    background: rgba(0,0,0, 0.49);
+    width: 30%;
+    transition: border-radius .25s;
+    
+    
+}
+
+.overlay:hover {
+    border-radius: 25px;
+    
+}
+
+.overlay, .absolutecenter {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#section0 {
+/* animated gradient */    
+background-size: 600% 100%; /*important*/
+background: linear-gradient(270deg, #cc6138, #c0d043, #3dbb63);
+-webkit-animation: AnimationName 18s ease infinite;
+-moz-animation: AnimationName 18s ease infinite;
+animation: AnimationName 18s ease infinite;
+}
+
+/*
+#section0 KeyFrames ======================= */
+        
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+    }
+
+#section1 {
+
+    background-image: url("../img/unsplash-edge_of_clouds.jpg");
+    background-size: cover;
+}
+  
+
+#section2 {
+
+}
+
+#section3 {
+background-image: url("../img/unsplash%20-%20horse.jpg");
+background-size: cover;
+}
+
+#section4 {
+
+}
+
+.os-animation {
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
+
+#svg5573 {
+    opacity:0;
+} 
+
+
+
+
+
+/*
+.dot-menu a span:after {
+    content: '•';
+    font-size:25px;
+}
+*/
